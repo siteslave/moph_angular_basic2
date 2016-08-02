@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="#/">Main</a>
+        <a href="#/fruits">Fruits</a>
+        <a href="#/about">About</a>
+      </li>
+    </ul>
+    <hr>
+    <ui-view></ui-view>
+  </body>
+  <script>
+    require('angular');
+    require('angular-ui-router');
+
+    require('./renderer.js');
+    require('./MainService.js');
+  </script>
+</html>
